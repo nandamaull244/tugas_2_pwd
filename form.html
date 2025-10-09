@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Data Mahasiswa</title>
+</head>
+<body>
+<h1>Form Mahasiswa</h1>
+<form>
+  <fieldset>
+    <legend>Data Mahasiswa</legend>
+    <label>Nama :</label>
+    <input type="text" name="nama"><br>
+    
+    <label>NPM :</label>
+    <input type="text" name="npm"><br>
+    
+    <label>Kelas :</label>
+    <input type="text" name="kelas"><br>
+    
+    <label>Jenis Kelamin :</label>
+    <input type="radio" name="jk" value="Pria">Pria
+    <input type="radio" name="jk" value="Wanita">Wanita
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Tempat Tinggal Mahasiswa</legend>
+    <label>Alamat    :</label>
+    <textarea name="alamat"></textarea><br>
+    
+    <label>Kecamatan :</label>
+    <input type="text" name="kecamatan"><br>
+    
+    <label>Kabupaten/Kotamadya :</label>
+    <input type="text" name="kabupaten"><br>
+    
+    <label>Provinsi :</label>
+    <input type="text" name="provinsi"><br>
+    
+    <label>Kode Pos :</label>
+    <input type="text" name="kodepos">
+  </fieldset>
+
+    <br>
+  <fieldset>
+    <legend>Lain-lainnya</legend>
+    <label>Bahasa Pemrograman :</label><br>
+    <label style="width:auto;"><input type="checkbox" name="bahasa" value="C/C++"> C / C++</label>
+    <label style="width:auto;"><input type="checkbox" name="bahasa" value="GoLang"> Go Lang</label>
+    <label style="width:auto;"><input type="checkbox" name="bahasa" value="Python"> Python</label>
+    <label style="width:auto;"><input type="checkbox" name="bahasa" value="Lainnya"> Lainnya</label><br>
+    <label style="width:auto;"><input type="checkbox" name="bahasa" value="PHP"> PHP</label>
+    <label style="width:auto;"><input type="checkbox" name="bahasa" value="Javascript"> Javascript</label>
+    <label style="width:auto;"><input type="checkbox" name="bahasa" value="Ruby"> Ruby</label><br><br>
+
+    <label>Kegiatan :</label><br>
+    <label style="width:auto;"><input type="checkbox" name="kegiatan" value="Organisasi Kemahasiswaan"> Organisasi Kemahasiswaan</label>
+    <label style="width:auto;"><input type="checkbox" name="kegiatan" value="Bidang Olahraga"> Bidang Olahraga</label>
+    <label style="width:auto;"><input type="checkbox" name="kegiatan" value="Lainnya"> Lainnya</label><br>
+    <label style="width:auto;"><input type="checkbox" name="kegiatan" value="Organisasi di Luar Kampus"> Organisasi di Luar Kampus</label>
+    <label style="width:auto;"><input type="checkbox" name="kegiatan" value="Bidang Seni"> Bidang Seni</label>
+  </fieldset>
+  <br>
+  <button>Reset</button>
+  <button>Submit</button>
+</form>
+
+</body>
+</html>
