@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+/* NAV (LOGO + MENU) */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 30px;
+}
+
+nav .logo img {
+  width: 150px;
+  height: auto;
+}
+
+nav .menu a {
+  color: rgb(96, 95, 95);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav .menu a.active {
+  color: #000000;
+  font-weight: 600;
+}   
+
+nav .menu a:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+/* section grid */
+section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  padding: 30px;
+  background: #fefefe;
+}
+
+/* ARTICLE */
+/* ====== INTRO SECTION ====== */
+.intro-section {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 60px;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.intro-text h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.intro-text h2 span {
+  color: #0077b6;
+}
+
+.intro-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-buttons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-buttons a:hover {
+  color: #0077b6;
+  transform: translateY(-3px);
+}
+
+.btn-contact {
+  background: #0077b6;
+  width: 160px;
+  color: white !important;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 119, 182, 0.3);
+}
+
+.btn-contact:hover {
+  background: #023e8a;
+}
+
+
+
+/* ASIDE */
+aside {
+  background-image: url(images/profile.png);
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+aside ul {
+  list-style: square inside;
+}
+
+/* Section works as grid */
+.works-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 kolom */
+  grid-template-rows: repeat(2, 450px);   /* 2 baris */
+  gap: 40px;
+  width: 100vw;                           
+  margin-left: calc(50% - 50vw);         
+  padding: 80px 60px;                     
+  background: white;                    
+}
+
+/* Card */
+.work-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Overlay */
+.work-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.work-card:hover .work-overlay {
+  opacity: 1;
+}
+
+/* Text */
+.work-overlay h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.work-overlay p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+/* Icon link */
+.btn-link {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* Responsif*/
+@media (max-width: 1024px) {
+  .works-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 400px);
+    padding: 60px 20px;
+  }
+}
+
+
+
+
+/* FOOTER */
+footer {
+  background: #001219;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 30px;
+  font-size: 0.9em;
+  border-radius: 20px;
+}
