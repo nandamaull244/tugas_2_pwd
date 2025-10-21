@@ -144,7 +144,7 @@ aside ul {
 .works-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* 2 kolom */
-  grid-template-rows: repeat(2, 450px);   /* 2 baris */
+  grid-template-rows: repeat(3, 450px);   /* 2 baris */
   gap: 40px;
   width: 100vw;                           
   margin-left: calc(50% - 50vw);         
@@ -213,6 +213,59 @@ aside ul {
   }
 }
 
+/* ===== Section About Works===== */
+.about-works {
+  width: 100vw;
+  margin-left: calc(50% - 50vw); 
+  background: #ffffff;
+  padding: 100px 80px;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #111;
+  font-weight: 700;
+}
+
+.about-content p {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.9;
+  text-align: justify;      
+  margin-bottom: 20px;
+}
+
+.about-content strong {
+  color: #000;
+  font-weight: 600;
+}
+
+/* ===== Responsif ===== */
+@media (max-width: 1024px) {
+  .about-works {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-works {
+    padding: 60px 25px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
 
 
 
@@ -225,4 +278,28 @@ footer {
   margin-bottom: 30px;
   font-size: 0.9em;
   border-radius: 20px;
+}
+
+
+/* Tombol Go to Top */
+#goTopBtn {
+  display: none; 
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 14px 16px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#goTopBtn:hover {
+  background-color: #111;
+  transform: translateY(-4px);
 }
