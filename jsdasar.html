@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Materi dasar JS</title>
+</head>
+<body>
+  <h2>Cara menggunakan JS di html web</h2>
+
+  <p id="output"></p>
+
+  <script>
+    //Variabel
+    let nama = "Nanda";
+    let umur = 20;
+    let hobi = "ngoding";
+
+    //Fungsi
+    function perkenalan() {
+      let teks = "Halo, nama saya " + nama + 
+                 ". Umur saya " + umur + 
+                 " tahun. Hobi saya adalah " + hobi + ".";
+      return teks;
+    }
+
+    document.getElementById("output").innerHTML = perkenalan();
+  </script>
+</body>
+</html>
